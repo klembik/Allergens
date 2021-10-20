@@ -8,23 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\38096\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\annac\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\38096\\Music\\Allergens\\Allergens.csproj",
+      "projectUniqueName": "C:\\Users\\annac\\Allergens-1\\Allergens.csproj",
       "projectName": "Allergens",
-      "projectPath": "C:\\Users\\38096\\Music\\Allergens\\Allergens.csproj",
-      "packagesPath": "C:\\Users\\38096\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\38096\\Music\\Allergens\\obj\\",
+      "projectPath": "C:\\Users\\annac\\Allergens-1\\Allergens.csproj",
+      "packagesPath": "C:\\Users\\annac\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\annac\\Allergens-1\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\38096\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\annac\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -36,6 +32,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -47,6 +44,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -62,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
