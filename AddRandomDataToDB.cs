@@ -1,4 +1,5 @@
 using System;
+using System.Data;
 using System.Data.SQLite;
 using System.Text;
 
@@ -37,10 +38,10 @@ namespace AddDataSQLlite
                 telNo = telNo.Append(number.ToString());
             }
             telNo = telNo.Append("-");
-            number = rand.Next(0, 743);
+            number = rand.Next(0, 743); 
             telNo = telNo.Append(String.Format("{0:D3}", number));
             telNo = telNo.Append("-");
-            number = rand.Next(0, 10000); 
+            number = rand.Next(0, 10000);
             telNo = telNo.Append(String.Format("{0:D4}", number));
             return telNo.ToString();
         }
@@ -61,6 +62,8 @@ namespace AddDataSQLlite
             cmd.Parameters.Add(new SQLiteParameter("@Variant2", textVariant));
             cmd.Parameters.Add(new SQLiteParameter("@Variant3", textVariant));
             cmd.Parameters.Add(new SQLiteParameter("@Variant4", textVariant));
+
+
             con.Open();
         }
 
@@ -103,7 +106,6 @@ namespace AddDataSQLlite
             cmd.Parameters.Add(new SQLiteParameter("@Answer", names[answersIndex]));
             cmd.Parameters.Add(new SQLiteParameter("@Number_question", numb_quest));
 
-
             con.Open();
         }
 
@@ -121,7 +123,6 @@ namespace AddDataSQLlite
             cmd.Parameters.Add(new SQLiteParameter("@Data", RandomDay()));
             cmd.Parameters.Add(new SQLiteParameter("@Checking", names[checkIndex]));
 
-
             con.Open();
         }
 
@@ -134,7 +135,6 @@ namespace AddDataSQLlite
             cmd.Connection = con;
             cmd.Parameters.Add(new SQLiteParameter("@Guardian_id"));
             cmd.Parameters.Add(new SQLiteParameter("@Under_guardian_ship_id", idElementUnder_guardian_ship_id));
-
 
             con.Open();
 
@@ -156,15 +156,17 @@ namespace AddDataSQLlite
 
             con.Open();
         }
+  
+
 
         static void Main(string[] args)
         {
-            int n = 40;
-            for (int j = 1; j < n; j++)
+            int dataQuantity = 40;
+               
+            string connectionString = @" Data Source = c:\Users\annac\Allergens\Allergens.db";
+            for (int j = 0; j < dataQuantity; j++)
             {
-               
-                string connectionString = @" Data Source = c:\Users\annac\Allergens-1\Allergens.db";
-               
+
                 using (SQLiteConnection con = new SQLiteConnection(connectionString))
                 {
 
@@ -172,12 +174,9 @@ namespace AddDataSQLlite
                     {
                         SQLiteCommand cmd = new SQLiteCommand();
                         Random rnd = new Random();
-                        AddAllergensDetermination(cmd, rnd, con);
-                        AddUsers(cmd, rnd, con);
-                        AddUsersAnswers(cmd, rnd, con);
-                        AddTakingMedication(cmd, rnd, con);
-                        AddGuardian(cmd, rnd, con);
-                        AddProhibitedProducts(cmd, rnd, con);
+
+                        // call function exm: AddAllergensDetermination(cmd, rnd, con);
+                       
                         int i = cmd.ExecuteNonQuery();
                         if (i == i)
                         {
@@ -189,8 +188,14 @@ namespace AddDataSQLlite
                     {
                         Console.WriteLine(ex);
                     }
+
                 }
+
             }
+
         }
+
     }
+    
 }
+
