@@ -168,7 +168,7 @@ class ProgramGenerateData
         {
             int dataQuantity = 40;
 
-            string connectionString = @" Data Source = c:\Users\annac\DB\Allergens\Allergens.db";
+            string connectionString = @" Data Source = Path to DB";
             for (int j = 0; j < dataQuantity; j++)
             {
 
@@ -180,7 +180,7 @@ class ProgramGenerateData
                         SQLiteCommand cmd = new SQLiteCommand();
                         Random rnd = new Random();
 
-                        AddUserAnswers(cmd, rnd, con);
+                       // call func exm. AddUserAnswers(cmd, rnd, con);
 
                         int i = cmd.ExecuteNonQuery();
                         if (i == i)

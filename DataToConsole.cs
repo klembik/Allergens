@@ -104,7 +104,7 @@ namespace DataToConsole
 
         public static void CallFunction()
         {
-            string connectionString = @" Data Source = c:\Users\annac\DB\Allergens\Allergens.db";
+            string connectionString = @" Data Source = Path to DB";
 
             using (SQLiteConnection con = new SQLiteConnection(connectionString))
             {
