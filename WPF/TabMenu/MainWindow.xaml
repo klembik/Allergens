@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:TabMenu"
-        mc:Ignorable="d" Height="600" Width="1080" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+        Title= "Allergens"
+        mc:Ignorable="d" Height="864" Width="1536" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"  WindowState="Maximized"  WindowStyle="ThreeDBorderWindow">
+
+
+
+
     <StackPanel Background="WhiteSmoke">
+
+
         <Grid>
             <Separator Name="MySeparator" 
                Height="4"
@@ -15,100 +22,122 @@
                VerticalAlignment="Bottom"                   
                Background="Black" />
         </Grid>
+        <Grid Height="97" Margin="20,0,155,0" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="178*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Border Background="GhostWhite" BorderBrush="DodgerBlue" BorderThickness="0,5,0,5" Grid.ColumnSpan="2" Margin="-20,-8,-85.6,20">
+                <StackPanel Orientation="Horizontal" Margin="0,-7.8,-77,0" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top" Height="80" Grid.ColumnSpan="2">
 
-        <Grid Height="102" Margin="15,0" >
+                    <StackPanel.RenderTransform>
 
-            <StackPanel Orientation="Horizontal" Margin="-10,-18,95,20" Width="965" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top">
-
-                <StackPanel.RenderTransform>
-
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="-0.037"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </StackPanel.RenderTransform>
-                <Button Uid="0" Width="99"  Height="85" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2196F3" Click="Button_Click" Margin="0,14,0,0" FontSize="22" VerticalAlignment="Top">
-                    <Image Width="64" Height="60" Source="allergenic.png"/>
-                </Button>
-                <Button Uid="1" Width="200"  Content="Medical Articles" Height="40" BorderBrush="{x:Null}" Foreground="#FF2196F3" Click="Button_Click"  Margin="5,40,5,20.8" FontSize="20" RenderTransformOrigin="0.5,0.5" Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}" FontWeight="Normal" FontFamily="MV Boli" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Left" VerticalAlignment="Top">
-                    <Button.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
                             <SkewTransform/>
                             <RotateTransform Angle="-0.037"/>
                             <TranslateTransform/>
                         </TransformGroup>
-                    </Button.RenderTransform>
-                </Button>
-                <Button Uid="2" Width="200"  Content="Test" Height="40" BorderBrush="{x:Null}" Foreground="#FF2196F3" Click="Button_Click" FontSize="20" Margin="5,40,5,20.8" RenderTransformOrigin="0.5,0.5" Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}" FontWeight="Normal" FontFamily="MV Boli" VerticalAlignment="Top">
-                    <Button.RenderTransform>
+                    </StackPanel.RenderTransform>
+                    <Button Uid="0" Width="130"  Height="81" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2196F3" Click="Button_Click" Margin="0,0,100,-1" FontSize="22" VerticalAlignment="Top">
+                        <Image Width="75" Height="58" Source="allergenic.png" RenderTransformOrigin="0.51,0.162"/>
+                    </Button>
+                    <Button Uid="1" Width="276"  Content="Medical Articles" Height="48" BorderBrush="{x:Null}" Foreground="#FF2196F3" Click="Button_Click"  Margin="5,20,5,0" FontSize="28" RenderTransformOrigin="0.5,0.5" Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}" FontWeight="Normal" FontFamily="MV Boli" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Left" VerticalAlignment="Top">
+                        <Button.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-0.037"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Button.RenderTransform>
+                    </Button>
+                    <Button Uid="2" Width="275"  Content="Test" Height="48" BorderBrush="{x:Null}" Foreground="#FF2196F3" Click="Button_Click" FontSize="28" Margin="5,20,5,0" RenderTransformOrigin="0.5,0.5" Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}" FontWeight="Normal" FontFamily="MV Boli" VerticalAlignment="Top">
+                        <Button.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-0.037"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Button.RenderTransform>
+                    </Button>
+                    <Button Uid="3" Width="275"   Content="Callendar" Height="Auto" BorderBrush="{x:Null}" Foreground="#FF2196F3" Click="Button_Click" FontSize="28" Margin="5,20,5,12"  RenderTransformOrigin="0.5,0.5" Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}" FontWeight="Normal" FontFamily="MV Boli">
+                        <Button.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-0.037"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Button.RenderTransform>
+                    </Button>
+                    <Button Uid="4" Width="281"   Content="Prohibited Products" Height="49" BorderBrush="{x:Null}" Foreground="#FF2196F3" Click="Button_Click"  Margin="5,20,5,0"  FontSize="28" RenderTransformOrigin="0.5,0.5" Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}" FontWeight="Normal" FontFamily="MV Boli" VerticalAlignment="Top" Padding="0,4,8,4">
+                        <Button.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-0.037"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Button.RenderTransform>
+                    </Button>
+
+                </StackPanel>
+            </Border>
+            <Border Background="GhostWhite" BorderBrush="DodgerBlue" BorderThickness="5,5,5,0" Margin="105,-8,-155.6,-735" Grid.Column="1">
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Right" Margin="-91.8,0.2,5,359.4" Width="150" RenderTransformOrigin="0.5,0.5">
+
+                    <StackPanel.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
                             <SkewTransform/>
                             <RotateTransform Angle="-0.037"/>
                             <TranslateTransform/>
                         </TransformGroup>
-                    </Button.RenderTransform>
-                </Button>
-                <Button Uid="3" Width="200"   Content="Callendar" Height="40" BorderBrush="{x:Null}" Foreground="#FF2196F3" Click="Button_Click" FontSize="20" Margin="5,40,5,20.8" RenderTransformOrigin="0.5,0.5" Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}" FontWeight="Normal" FontFamily="MV Boli" VerticalAlignment="Top">
-                    <Button.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform/>
-                            <SkewTransform/>
-                            <RotateTransform Angle="-0.037"/>
-                            <TranslateTransform/>
-                        </TransformGroup>
-                    </Button.RenderTransform>
-                </Button>
-                <Button Uid="4" Width="200"   Content="Prohibited Products" Height="40" BorderBrush="{x:Null}" Foreground="#FF2196F3" Click="Button_Click"  Margin="5,40,5,20.8" FontSize="20" RenderTransformOrigin="0.5,0.5" Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}" FontWeight="Normal" FontFamily="MV Boli" VerticalAlignment="Top" Padding="0,4,8,4">
-                    <Button.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform/>
-                            <SkewTransform/>
-                            <RotateTransform Angle="-0.037"/>
-                            <TranslateTransform/>
-                        </TransformGroup>
-                    </Button.RenderTransform>
-                </Button>
-
-            </StackPanel>
-
-            <StackPanel Orientation="Vertical" HorizontalAlignment="Right" Margin="0,7,10,7" Width="90" RenderTransformOrigin="0.5,0.5">
-                <StackPanel.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="-0.037"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </StackPanel.RenderTransform>
-
-                <Button HorizontalAlignment="Right"  Margin="0,0,-0.2,10" Background="#FF4AD989" Click="Button_Click_4">
-                    <Button.BorderBrush>
-                        <ImageBrush/>
-                    </Button.BorderBrush>
-                    <Image Width="27" Height="35" Source="logout.png"></Image>
-                </Button>
-
-                <Button HorizontalAlignment="Right"  Margin="0,0,-0.4,0" Click="Button_Click_3" Background="#FF4AD989" Width="61">
-                    <Button.BorderBrush>
-                        <ImageBrush/>
-                    </Button.BorderBrush>
-                    <Image Width="24" Height="28" Source="settings.png"></Image>
-                </Button>
-
-            </StackPanel>
+                    </StackPanel.RenderTransform>
 
 
+                    <Button HorizontalAlignment="Right"  Margin="90,15,0,10" Click="Button_Click_4" Height="40" Width="55" RenderTransformOrigin="0.5,0.5" Background="White">
+                        <Button.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-0.124"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Button.RenderTransform>
+                        <Button.BorderBrush>
+                            <ImageBrush/>
+                        </Button.BorderBrush>
+                        <Image Width="21" Height="25" Source="logout.png"/>
+                    </Button>
+                    <Button HorizontalAlignment="Right" Click="Button_Click_3" Width="55" Height="40" RenderTransformOrigin="0.511,0.859" Background="White" Margin="0,20,0,0">
+                        <Button.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleY="0.495"/>
+                                <RotateTransform Angle="-0.536"/>
+                                <TranslateTransform X="0.117" Y="0.236"/>
+                            </TransformGroup>
+                        </Button.RenderTransform>
+                        <Button.BorderBrush>
+                            <ImageBrush/>
+                        </Button.BorderBrush>
+                        <Image Width="21" Height="30" Source="settings.png"/>
+                    </Button>
+
+                </StackPanel>
+            </Border>
 
         </Grid>
-
-
-
-
-        <Grid x:Name="GridMain" Height="490" Background="Aquamarine">
+        <Grid x:Name="GridMain" Height="750" Background="Aquamarine" Margin="0,-20,74.6,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="220*"/>
+                <ColumnDefinition Width="550*"/>
+                <ColumnDefinition Width="523*"/>
+                <ColumnDefinition Width="162*"/>
+            </Grid.ColumnDefinitions>
         </Grid>
 
 

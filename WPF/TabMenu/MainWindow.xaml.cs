@@ -15,10 +15,9 @@ using System.Windows.Shapes;
 
 namespace TabMenu
 {
-    /// <summary>
-    /// Interação lógica para MainWindow.xam
-    /// </summary>
-    public partial class MainWindow : Window
+  
+
+    public partial class MainWindow : Window 
     {
         public MainWindow()
         {
@@ -29,7 +28,7 @@ namespace TabMenu
         {
             int index = int.Parse(((Button)e.Source).Uid);
 
-            //GridCursor.Margin = new Thickness(10 + (150 * index), 0, 0, 0);
+         
 
             switch(index)
             {
